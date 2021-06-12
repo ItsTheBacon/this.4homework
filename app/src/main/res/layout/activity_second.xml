@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    android:gravity="center"
+
+    tools:context=".SecondActivity">
+
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/white"
+        android:hint="Enter title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+
+        />
+
+    <EditText
+        android:id="@+id/et_descripton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_title"
+        android:layout_margin="22dp"
+        android:backgroundTint="@color/white"
+        android:hint="Enter description"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_descripton"
+        android:layout_margin="22dp"
+        android:text="Добавить"
+        android:id="@+id/add_btn_task"
+
+        />
+
+</RelativeLayout>
