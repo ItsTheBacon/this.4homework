@@ -7,6 +7,7 @@
     android:background="#222"
     android:gravity="center"
 
+
     tools:context=".SecondActivity">
 
 
@@ -15,7 +16,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="22dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/style_inputs"
+
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-thin"
         android:hint="Enter title"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -29,7 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/et_title"
         android:layout_margin="22dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/style_inputs"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-thin"
         android:hint="Enter description"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -38,12 +44,17 @@
         />
 
     <Button
+        android:id="@+id/add_btn_task"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_descripton"
         android:layout_margin="22dp"
+        android:background="@drawable/style_inputs"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-thin"
         android:text="Добавить"
-        android:id="@+id/add_btn_task"
+        android:textColor="@color/white"
 
         />
 
