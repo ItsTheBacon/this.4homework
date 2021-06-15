@@ -55,12 +55,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
         });
-        Intent intent =getIntent();
-        String title2= intent.getStringExtra("title");
-        String description2 = intent.getStringExtra("description");
-        pos= intent.getIntExtra("pos", 0);
-        etTitle.setText(title2);
-        etDescription.setText(description2);
+
 
     }
 

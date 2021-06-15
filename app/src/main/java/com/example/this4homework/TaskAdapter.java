@@ -59,11 +59,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TackViewHolder
 
     @Override
     public void onBindViewHolder(TaskAdapter.TackViewHolder holder, int position) {
-     //   pos = position;
+
         holder.bind(list.get(position));
-       // holder.txtTitle.setText(list.get(position).getTitle());
        // holder.txtDescription.setText(list.get(position).getDescriptoin());
-        //holder.txtDate.setText(list.get(position).getDate());
 
 
     }

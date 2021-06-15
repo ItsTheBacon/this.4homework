@@ -32,10 +32,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         rvTask = findViewById(R.id.rv_task);
-
-
         taskAdapter = new TaskAdapter();
         rvTask.setAdapter(taskAdapter);
         btnOpenAddTask = findViewById(R.id.btn_open_add_task);
@@ -43,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, SecondActivity.class);
             isEdit = false;
             startActivityForResult(intent, 100);
-
-
         });
 
         taskAdapter.setItemClickList(new ItemClickList() {
@@ -57,15 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("pos", position);
                 // setResult(RESULT_OK, intent);
                 startActivityForResult(intent, 1);
-
-
             }
         });
-
-
     }
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 
@@ -86,10 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "text is change", Toast.LENGTH_LONG).show();
 
                 taskAdapter.editData(model, pos);
-
-
             }
-
         }
     }
 }
